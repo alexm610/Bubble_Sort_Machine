@@ -16,15 +16,15 @@ module bubble_sort (input logic CLOCK_50, input logic [3:0] KEY, input logic [9:
                        .fourth_reg(hex_four));
 
     binary_to_hex B2H_0 (.BINARY(hex_one), 
-                         .HEX(HEX0));
+                         .HEX(HEX5));
     binary_to_hex B2H_1 (.BINARY(hex_two), 
-                         .HEX(HEX1));
+                         .HEX(HEX4));
     binary_to_hex B2H_2 (.BINARY(hex_three), 
-                         .HEX(HEX2));
-    binary_to_hex B2H_3 (.BINARY(hex_four), 
                          .HEX(HEX3));
-    HEX4 = 7'b1111111;
-    HEX5 = 7'b1111111;
+    binary_to_hex B2H_3 (.BINARY(hex_four), 
+                         .HEX(HEX2));
+    HEX1 = 7'b1111111;
+    HEX0 = 7'b1111111;
 
 
 endmodule: bubble_sort
