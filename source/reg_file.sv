@@ -19,14 +19,14 @@
 `define o     		7'b0100011
 `define OFF   		7'b1111111
 
-module register (clock, reset, in, enable, out);
+module register (clock, reset_n, in, enable, out);
     parameter k = 32;
-    input logic clock, reset, enable;
+    input logic clock, reset_n, enable;
     input logic[k-1:0] in;
     output logic [k-1:0] out;
 
     always @(posedge clock) begin
-        if (!reset) begin
+        if (!reset_n) begin
             out = {k{1'b0}};
         end else if (enable) begin
             out = in;

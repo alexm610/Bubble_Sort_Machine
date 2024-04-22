@@ -23,8 +23,8 @@ module bubble_sort (input logic CLOCK_50, input logic [3:0] KEY, input logic [9:
                          .HEX(HEX3));
     binary_to_hex B2H_3 (.BINARY(hex_four), 
                          .HEX(HEX2));
-    HEX1 = 7'b1111111;
-    HEX0 = 7'b1111111;
+    assign HEX1 = 7'b1111111;
+    assign HEX0 = 7'b1111111;
 
 
 endmodule: bubble_sort
